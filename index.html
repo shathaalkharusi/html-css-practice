@@ -19,6 +19,7 @@
         <button type="button">Search</button>
       </form>
     </header>
+    <hr>
     <main>
       <section>
         <h2>Welcome to the Portal</h2>
@@ -43,6 +44,7 @@
           <figcaption>Figure 1: Overview of the taxpayer dashboard</figcaption>
         </figure>
       </section>
+      <hr>
       <article>
         <h2>Announcement: VAT Filing Deadline Extended</h2>
         <p>
@@ -57,6 +59,7 @@
         <p><small>Source: Portal Communications Team</small></p>
         <p><small>Published: 20 July 2026</small></p>
       </article>
+      <hr>
       <section>
         <h2>Recent Filing Types</h2>
         <p>Filing status for the current period</p>
@@ -109,6 +112,53 @@
           </p>
         </div>
       </section>
+<hr>
+      <section>
+        <h2>Register a Payment</h2>
+        <form>
+          <fieldset>
+            <legend><h3>Personal details</h3></legend>
+            <div>
+            <label for="Full Name">Full Name:</label>
+            <input type="text" id="Full Name" name="Full Name">
+      </div><br>
+      <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email">
+          </div>
+          </fieldset>
+          <fieldset>
+           <legend><h3>Payment details</h3></legend>
+            <div>
+            <label for="Amount">Amount (OMR)</label>
+            <input type="number" id="Amount" name="Amount" min="0" list="amount-options" step="0.01">
+            <datalist id="amount-options">
+              <option value="100">100</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </datalist>
+            <small>Enter the amount in Omani Rials, up to two decimal places</small>
+            </div><br>
+            <div>
+            <label for="tax-type">Tax Type</label>
+            <select id="tax-type" name="taxType">
+              <option value="vat">Vat</option>
+              <option value="cit">CIT</option>
+              <option value="pit">PIT</option>
+            </select>
+            </div>
+          </fieldset><br>
+           <div>
+            <input type="checkbox" id="confirm" name="confirm" required>
+            <label for="confirm"> I confirm the information above is accurate </label>
+          </div><br>
+         <div>
+          <button type="submit">Submit Payment</button>
+          <button type="reset">Clear Form</button>
+         </div>
+        </form>
+      </section>
+      <hr>
       <section>
         <h2>Quick Links</h2>
         <nav>
@@ -136,6 +186,7 @@
         <p>&#9656;<b> Can I edit a submitted return?</b></p>
       </section>
     </main>
+    <hr>
     <footer>
       <p>&copy; 2026 Taxpayer Portal. All rights reserved.</p>
       <p>
