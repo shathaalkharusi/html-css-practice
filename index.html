@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <title>Taxpayer Portal</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <div class="container">
+    <header class="header">
       <h1>Taxpayer Portal</h1>
-      <p>Online Tax Services</p>
+      <p class="sub-title" >Online Tax Services</p>
       <nav>
         <a href="#">Home</a>&nbsp;&nbsp; <a href="#">Tax Filing</a>&nbsp;&nbsp;
         <a href="#">Payments</a>&nbsp;&nbsp; <a href="#">Support</a>&nbsp;&nbsp;
         <a href="#">About</a>
       </nav><br>
+      <div class="line"></div>
       <form>
-        <label for="Search">Search the portal</label><br>
-        <input type="text" id="Search" placeholder="e.g. VAT return" />
-        <button type="button">Search</button>
+        <label class="search-label" for="Search">Search the portal</label>
+        <div>
+        <input class="search-input" type="text" id="Search" placeholder="e.g. VAT return" />
+        <button class="search-button" type="button">Search</button>
+        </div>
       </form>
     </header>
     <hr>
@@ -199,5 +204,6 @@
         <a href="#">Contact Us</a>
       </p>
     </footer>
+    </div>
   </body>
 </html>

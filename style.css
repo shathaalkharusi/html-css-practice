@@ -1,0 +1,75 @@
+body, h1, h2, h3, p, form{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Georgia;
+}
+img{
+    width: 100%;
+}
+input{
+    all: unset;
+}
+.container{
+    margin: 0px auto;
+    padding: 0 20px;
+    max-width: 800px;
+    background-color: #F4F6F9;
+}
+.header{
+    color: #FFF;
+    padding: 24px 24px 16px 24px;
+    border-radius: 0 0 8px 8px;
+    background-color: #1A4E8A;
+}
+h1{  
+font-weight: 700;
+font-size: 32px;
+letter-spacing: 0.5px;
+color: #F4F6F9;
+}
+.sub-title{
+margin-top: 5px;
+font-family: Georgia;
+font-weight: 400;
+font-style: Italic;
+letter-spacing: 0px;
+color: #C8D8EF;
+}
+header nav{
+    margin-top: 20px;
+}
+header a{
+    color: #FFF;
+    padding:6px 12px ;
+    background-color:#2A6AB5 ;
+    margin-right:8px ;
+    text-decoration: none;
+}
+header a:hover{
+    background-color: #2360a5;
+}
+.line{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    height: 1px;
+    background-color: #2A6AB5;
+}
+.search-label{
+color: #C8D8EF;
+}
+.search-input{
+margin-top: 25px;
+padding:12px 5px ;
+border-radius:4px 0 0 px ;
+background-color: #FFF;
+color: #000;
+}
+.search-button{
+    border: none;
+    padding: 25px 10px;
+    background: none;
+    color: #FFF;
+    cursor: pointer;
+}
