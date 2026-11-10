@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taxpayer Portal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="theme.css">
   </head>
   <body>
     <div class="container">
     <header class="header">
       <h1>Taxpayer Portal</h1>
       <p class="sub-title" >Online Tax Services</p>
-      <nav>
+      <nav class="nevigation">
         <a href="#">Home</a>&nbsp;&nbsp; <a href="#">Tax Filing</a>&nbsp;&nbsp;
         <a href="#">Payments</a>&nbsp;&nbsp; <a href="#">Support</a>&nbsp;&nbsp;
         <a href="#">About</a>
@@ -24,15 +27,15 @@
         </div>
       </form>
     </header>
-    <hr>
     <main>
-      <section>
-        <h2>Welcome to the Portal</h2>
+      <section class="welcome">
+        <h2 >Welcome to the Portal</h2>
+        <div></div>
         <p>
           This online system allows registered taxpayers to
           <b> file returns</b>, <i>manage payments</i>, and track submissions
           online. The portal is designed to simplify communication between
-          taxpayers and the tax authority
+          taxpayers and the tax authority.
         </p>
         <p>
           Use the navigation menu above to explore filing options, review your
@@ -49,32 +52,34 @@
           <figcaption>Figure 1: Overview of the taxpayer dashboard</figcaption>
         </figure>
       </section>
-      <hr>
-      <article>
+      <article class="announcement">
         <h2>Announcement: VAT Filing Deadline Extended</h2>
+
         <p>
           The deadline for quarterly VAT filing has been extended by two weeks
           to accommodate the recent system maintenance window.
         </p>
 
-        <blockquote>
+        <figure>
+          <blockquote>
             <em>All pending VAT submissions will now be accepted until the end of
             the month without penalty.</em>
-        </blockquote>
-        <p><small>Source: Portal Communications Team</small></p>
-        <p><small>Published: 20 July 2026</small></p>
+          </blockquote>
+          <figcaption>Source: Portal Communications Team</figcaption>
+        </figure>
+
+        <p>Published:<time datetime="20-07-2026"> 20 July 2026 </time></p>
+        
       </article>
-      <hr>
-      <section>
+      <section class="filling-type">
         <h2>Recent Filing Types</h2>
-        <p>Filing status for the current period</p>
+        <h4>Filing status for the current period</h4>
         <table
-          border="1"
+        border="1"
           width="850"
           height="140"
           cellpadding="6"
           cellspacing="0"
-          bordercolor="#cccccc"
         >
           <thead>
             <tr>
@@ -86,38 +91,35 @@
 
           <tbody>
             <tr>
-              <td><b>VAT</b></td>
+              <th><b>VAT</b></th>
               <td>Q2 2026</td>
               <td>Submitted</td>
             </tr>
             <tr>
-              <td><b>CIT</b></td>
+              <th><b>CIT</b></th>
               <td>2025 Annual</td>
               <td>Pending</td>
             </tr>
             <tr>
-              <td><b>PIT</b></td>
+              <th><b>PIT</b></th>
               <td>2025 Annual</td>
               <td>Draft</td>
             </tr>
           </tbody>
         </table>
-        <div>
-          <p>
+        <div class="progress-wrapper">
             <label for="completion">
               Overall filing completion this quarter:
             </label>
             <progress id="completion" value="70" max="100"></progress>
-          </p>
-          <p>
+        </div>
+          <div class="progress-wrapper">
             <label for="score">
               Average review score for submitted filings:
             </label>
             <progress id="score" value="85" max="100"></progress>
-          </p>
         </div>
       </section>
-<hr>
       <section>
         <h2>Register a Payment</h2>
         <form>

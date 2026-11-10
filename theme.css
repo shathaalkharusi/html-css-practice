@@ -1,0 +1,15 @@
+:root {
+    --bg-main: #F4F6F9;
+    --bg-white: #FFF;
+    --primary-color: #1A4E8A;
+    --primary-hover: #2360a5;
+    --btn-bg: #2A6AB5;
+    --text-white: #FFF;
+    --text-dark: #000;
+    --text-muted: #666666;
+    --text-darker: #2C2C2C;
+    --text-title: #3A3A5C;
+    --sub-title-color: #C8D8EF;
+    --border-color: #D0DCE8;
+    --blockquote-bg: #F0F5FF;
+}
