@@ -1,4 +1,4 @@
-body, h1, h2, h3, p, form{
+body, h1, h2, h3, p, form, ol, li{
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,11 @@ img{
     width: 100%;
 }
 
-input{
-    all: unset;
+input:not([type="checkbox"]), select {
+    border: 1px solid #B0C4DE;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }

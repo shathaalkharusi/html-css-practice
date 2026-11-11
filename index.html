@@ -27,6 +27,7 @@
         </div>
       </form>
     </header>
+    <div class="main">
     <main>
       <section class="welcome">
         <h2 >Welcome to the Portal</h2>
@@ -120,31 +121,38 @@
             <progress id="score" value="85" max="100"></progress>
         </div>
       </section>
-      <section>
+      <section class="register-payment">
         <h2>Register a Payment</h2>
+        <div class="payment-secure">
+          secure
+        </div>
+
         <form>
-          <fieldset>
+          <fieldset class="register-fieldset">
             <legend><h3>Personal details</h3></legend>
+
             <div>
             <label for="Full Name">Full Name:</label>
-            <input type="text" id="Full Name" name="Full Name">
-      </div><br>
-      <div>
+            <input type="text" id="Full Name" name="Full Name" >
+            </div><br>
+
+            <div>
             <label for="Email">Email:</label>
-            <input type="email" id="Email" name="Email">
-          </div>
+            <input type="email" id="Email" name="Email" >
+            </div>
           </fieldset>
-          <fieldset>
+
+          <fieldset class="register-fieldset">
            <legend><h3>Payment details</h3></legend>
             <div>
             <label for="Amount">Amount (OMR)</label>
-            <input type="number" id="Amount" name="Amount" min="0" list="amount-options" step="0.01">
+            <input type="number" id="Amount" name="Amount" min="0" list="amount-options" step="0.01" >
             <datalist id="amount-options">
               <option value="100">100</option>
               <option value="500">500</option>
               <option value="1000">1000</option>
             </datalist>
-            <small>Enter the amount in Omani Rials, up to two decimal places</small>
+            <small>Enter the amount in Omani Rials, up to two decimal places.</small>
             </div><br>
             <div>
             <label for="tax-type">Tax Type</label>
@@ -155,18 +163,19 @@
             </select>
             </div>
           </fieldset><br>
-           <div>
+           <div class="checkbox-wrapper">
             <input type="checkbox" id="confirm" name="confirm" required>
             <label for="confirm"> I confirm the information above is accurate </label>
-          </div><br>
-         <div>
+           </div><br>
+
+          <div>
           <button type="submit">Submit Payment</button>
           <button type="reset">Clear Form</button>
-         </div>
+          </div>
         </form>
       </section>
-      <hr>
-      <section>
+    </div>
+      <section class="quick">
         <h2>Quick Links</h2>
         <nav>
           <ol>
@@ -176,24 +185,21 @@
             <li><a href="#">Contact a support agent</a></li>
           </ol>
         </nav>
-      </section>
-      <section>
-        <h2>Key Terms</h2>
-
+     
+        <h3>Key Terms</h3>
+      <div class="paragraph">
         <h3>VAT</h3>
         <p>A tax added to most goods and services at the point of sale.</p>
 
         <h3>Filing Period</h3>
         <p>The date range a given return or payment covers.</p>
-      </section>
-      <section>
-        <h2>Frequently Asked Questions</h2>
-
-        <p>&#9656;<b> What happens if I miss a filing deadline?</b></p>
-        <p>&#9656;<b> Can I edit a submitted return?</b></p>
+      </div>
+        <h3>Frequently Asked Questions</h3>
+        <p><b>What happens if I miss a filing deadline?</b></p>
+        <p><b>Can I edit a submitted return?</b></p>
       </section>
     </main>
-    <hr>
+    
     <footer>
       <p>&copy; 2026 Taxpayer Portal. All rights reserved.</p>
       <p>

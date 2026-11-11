@@ -9,7 +9,19 @@
     --text-muted: #666666;
     --text-darker: #2C2C2C;
     --text-title: #3A3A5C;
+    --text-body: #333333;
     --sub-title-color: #C8D8EF;
     --border-color: #D0DCE8;
+    --border-light: #DCE4EC;
+    --border-input: #B0C4DE;
     --blockquote-bg: #F0F5FF;
+    --fieldset-bg: #F8FAFF;
+    --quick-bg: #EBF3FA;
+    --secure-bg: #D4EDDA;
+    --secure-text: #276139;
+    --error-color: #FF6B6B;
+    --focus-ring: rgba(59, 130, 246, 0.15);
+    --focus-border: #3b82f6;
+    --hover-bg: #E0EDFF;
+    --hover-border: #BFDBFE;
 }
